@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Attractions - Explore Kazakhstan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/mykonos-icon-colorful-gradient-logo-island-purple-red-rounded-sign-map-your-design-vector-illustration-191224769.jpg" type="image/png">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from("#nav-title", { opacity: 0, x: -50, duration: 1 });
+            gsap.from("#nav-menu li", { opacity: 0, y: -20, duration: 1, stagger: 0.2 });
+
+            gsap.from("#page-title", { opacity: 0, scale: 0.8, duration: 1.2, delay: 0.3 });
+            gsap.from("#page-content", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+            gsap.from(".attraction-item", { opacity: 0, x: -30, duration: 1, stagger: 0.3, delay: 0.7 });
+        });
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-gray-950 py-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 id="nav-title" class="text-3xl font-extrabold text-white">Explore Kazakhstan</h1>
+            <nav>
+                <ul class="flex space-x-6" id="nav-menu">
+                    <li><a href="index.html" class="hover:text-purple-400 transition">Home</a></li>
+                    <li><a href="geography&culture.html" class="hover:text-purple-400 transition">Geography & Culture</a></li>
+                    <li><a href="thingstodo.html" class="hover:text-purple-400 transition">Things to Do</a></li>
+                    <li><a href="attractions.html" class="text-purple-400 font-bold">Attractions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16" id="page-content">
+        <h2 id="page-title" class="text-4xl font-bold text-center text-purple-400">Top Attractions in Kazakhstan</h2>
+        <p class="text-lg text-center mt-4 max-w-2xl mx-auto text-gray-300">
+            Explore the breathtaking destinations that make Kazakhstan a must-visit country.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-12 mt-12">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md attraction-item">
+                <h3 class="text-2xl font-semibold text-purple-300">1. Charyn Canyon</h3>
+                <p class="mt-2 text-gray-400">
+                    Dubbed the "Grand Canyon of Central Asia," this breathtaking natural wonder features towering red rock formations and sweeping, picturesque views, making it a must-see for nature enthusiasts
+                </p>
+                <img src="https://www.dostartrips.com/wp-content/uploads/2020/12/Valley-of-Castles.jpg" alt="Kazakhstan winter" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md attraction-item">
+                <h3 class="text-2xl font-semibold text-purple-300">2. Big Almaty Lake</h3>
+                <p class="mt-2 text-gray-400">
+                    A beautiful alpine lake, nestled among snow-capped mountains, provides breathtaking views and a serene atmosphere, perfect for relaxation and reconnecting with nature
+                </p>
+                <img src="https://images.squarespace-cdn.com/content/v1/57483e0df699bbec3bf5f6ef/1587314588664-JK15QFS6WC7RVV9WJJQ5/ke17ZwdGBToddI8pDm48kAJsswp0EXV6qc0SOJ8DOsUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc_E7dXkCi7l7eF32s1E_vQW45WD95yMX6bcbEP6L1pnbQgytvpF9JKWwbDEjqe30p/image-asset.jpeg" alt="Kazakhstan winter" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md attraction-item">
+                <h3 class="text-2xl font-semibold text-purple-300">3. Bayterek Tower</h3>
+                <p class="mt-2 text-gray-400">
+                    Bayterek Tower: A striking symbol of Kazakhstan, this futuristic structure in Astana (Nur-Sultan) provides panoramic views of the capital, blending modern design with cultural significance
+                </p>
+                <img src="https://centralasiaprogram.org/wp-content/uploads/2019/11/32328175611_125faa9558_c-1-1170x780.jpg" alt="Kazakhstan winter" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md attraction-item">
+                <h3 class="text-2xl font-semibold text-purple-300">4. Medeu Ice Rink</h3>
+                <p class="mt-2 text-gray-400">
+                    The highest outdoor skating rink in the world, set in a breathtaking mountain valley near Almaty, offering a unique and scenic experience for visitors
+                </p>
+                <img src="https://aboutkazakhstan.com/blog/wp-content/uploads/2017/01/medeu-skating-rink-almaty-kazakhstan-7.jpg" alt="Kazakhstan winter" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md attraction-item">
+                <h3 class="text-2xl font-semibold text-purple-300">5. Mausoleum of Khoja Ahmed Yasawi</h3>
+                <p class="mt-2 text-gray-400">
+                    A UNESCO World Heritage Site, this exquisite mausoleum exemplifies the grandeur of Timurid architecture and holds immense historical and cultural significance, making it a treasure of Kazakhstan's heritage
+                </p>
+                <img src="https://thumbs.dreamstime.com/b/mausoleum-khoja-ahmed-yasawi-turkistan-kazakhst-kazakhstan-223595905.jpg" alt="Kazakhstan winter" class="rounded-lg mt-4">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-950 text-gray-300 text-center py-6 mt-12">
+        <p>&copy; 2025 Explore Kazakhstan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography & Culture - Explore Kazakhstan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/mykonos-icon-colorful-gradient-logo-island-purple-red-rounded-sign-map-your-design-vector-illustration-191224769.jpg" type="image/png">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from("#nav-title", { opacity: 0, x: -50, duration: 1 });
+            gsap.from("#nav-menu li", { opacity: 0, y: -20, duration: 1, stagger: 0.2 });
+
+            gsap.from("#page-title", { opacity: 0, scale: 0.8, duration: 1.2, delay: 0.3 });
+            gsap.from("#page-content", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+            gsap.from(".content-box", { opacity: 0, x: -30, duration: 1, stagger: 0.3, delay: 0.7 });
+        });
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-gray-950 py-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 id="nav-title" class="text-3xl font-extrabold text-white">Explore Kazakhstan</h1>
+            <nav>
+                <ul class="flex space-x-6" id="nav-menu">
+                    <li><a href="index.html" class="hover:text-purple-400 transition">Home</a></li>
+                    <li><a href="geography-culture.html" class="text-purple-400 font-bold">Geography & Culture</a></li>
+                    <li><a href="thingstodo.html" class="hover:text-purple-400 transition">Things to Do</a></li>
+                    <li><a href="attractions.html" class="hover:text-purple-400 transition">Attractions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16" id="page-content">
+        <h2 id="page-title" class="text-4xl font-bold text-center text-purple-400">Geography & Culture</h2>
+        <p class="text-lg text-center mt-4 max-w-2xl mx-auto text-gray-300">
+            Discover Kazakhstan's breathtaking landscapes and rich cultural heritage
+        </p>
+
+        <!-- Geography Section -->
+        <div class="grid md:grid-cols-2 gap-12 mt-12">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md content-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Geography</h3>
+                <p class="mt-2 text-gray-400">
+                    Kazakhstan, the world’s largest landlocked nation, boasts a stunning variety of landscapes. From expansive steppes and 
+                    arid deserts to majestic mountain ranges and crystal-clear lakes, its geography offers a remarkable blend of natural beauty and ecological diversity
+                </p>
+                <img src="https://cdn.britannica.com/52/7252-050-FE079526/Kazakhstan-map-features-locator.jpg" alt="Kazakhstan landscape" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md content-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Climate</h3>
+                <p class="mt-2 text-gray-400">
+                    Kazakhstan has an extreme continental climate, characterized by scorching summers and bitterly cold winters. 
+                    Snowfall is frequent in the northern areas and mountainous regions, adding to the dramatic seasonal contrasts
+                </p>
+                <img src="https://images.climate-data.org/location/486/climate-graph-400.png" alt="Kazakhstan winter" class="rounded-lg mt-4">
+            </div>
+        </div>
+
+        <!-- Culture Section -->
+        <div class="grid md:grid-cols-2 gap-12 mt-12">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md content-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Culture & Traditions</h3>
+                <p class="mt-2 text-gray-400">
+                    Kazakhstan’s culture blends Turkic, Mongolic, and Russian influences, reflecting its rich history and diverse heritage. 
+                    Traditional nomadic practices, such as horseback riding and eagle hunting, remain deeply rooted in Kazakh identity and 
+                    are celebrated as symbols of national pride
+                </p>
+                <img src="https://www.orexca.com/img/kazakhstan/grandma1.jpg" alt="Kazakhstan traditions" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md content-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Major Cities</h3>
+                <p class="mt-2 text-gray-400">
+                    Nur-Sultan (Astana): The futuristic capital of Kazakhstan, known for its striking modern architecture and bold urban design. 
+                    Landmarks such as the Bayterek Tower, the Khan Shatyr Entertainment Center, and the Nur Alem Museum embody the city's vision for 
+                    innovation and progress
+                    
+                </p>
+                <img src="https://cdn.britannica.com/65/89765-050-50F5F6C0/Nursultan-Kazakhstan.jpg" alt="Kazakhstan city" class="rounded-lg mt-4">
+            </div>
+        </div>
+
+        <!-- Languages & Food Section -->
+        <div class="grid md:grid-cols-2 gap-12 mt-12">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md content-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Languages</h3>
+                <p class="mt-2 text-gray-400">
+                    The official language of Kazakhstan is Kazakh, which is written in the Cyrillic script and widely used in government, 
+                    media, and education. However, Russian is also commonly spoken, particularly in urban areas like Nur-Sultan and Almaty, 
+                    where it serves as a lingua franca for interethnic communication
+                </p>
+                <img src="https://think.kera.org/wp-content/uploads/2022/07/shutterstock_2035069028-640x400.jpg" alt="Kazakh language" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md content-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Traditional Food</h3>
+                <p class="mt-2 text-gray-400">
+                    Kazakhstan's cuisine is hearty and meat-based, showcasing dishes like Beshbarmak (boiled meat with noodles) and Shashlik (marinated grilled skewers). 
+                    Other specialties include Kazy (horse meat sausage), Baursak (fried dough), and Kumys (fermented mare's milk), reflecting a rich nomadic heritage 
+                    with diverse cultural influences
+                </p>
+                <img src="https://th.bing.com/th/id/OIP.s4x65YqoTWdfnwr63d4T-wHaEM?w=744&h=422&rs=1&pid=ImgDetMain" alt="Kazakh food" class="rounded-lg mt-4">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-950 text-gray-300 text-center py-6 mt-12">
+        <p>&copy; 2025 Explore Kazakhstan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

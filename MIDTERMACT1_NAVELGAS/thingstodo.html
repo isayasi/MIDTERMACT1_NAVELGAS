@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to Do - Explore Kazakhstan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/mykonos-icon-colorful-gradient-logo-island-purple-red-rounded-sign-map-your-design-vector-illustration-191224769.jpg" type="image/png">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from("#nav-title", { opacity: 0, x: -50, duration: 1 });
+            gsap.from("#nav-menu li", { opacity: 0, y: -20, duration: 1, stagger: 0.2 });
+            gsap.from("#page-title", { opacity: 0, scale: 0.8, duration: 1.2, delay: 0.3 });
+            gsap.from("#page-content", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+            gsap.from(".activity-box", { opacity: 0, x: -30, duration: 1, stagger: 0.3, delay: 0.7 });
+        });
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-gray-950 py-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 id="nav-title" class="text-3xl font-extrabold text-white">Explore Kazakhstan</h1>
+            <nav>
+                <ul class="flex space-x-6" id="nav-menu">
+                    <li><a href="index.html" class="hover:text-purple-400 transition">Home</a></li>
+                    <li><a href="geography&culture.html" class="hover:text-purple-400 transition">Geography & Culture</a></li>
+                    <li><a href="thingstodo.html" class="text-purple-400 font-bold">Things to Do</a></li>
+                    <li><a href="attractions.html" class="hover:text-purple-400 transition">Attractions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16" id="page-content">
+        <h2 id="page-title" class="text-4xl font-bold text-center text-purple-400">Things to Do in Kazakhstan</h2>
+        <p class="text-lg text-center mt-4 max-w-2xl mx-auto text-gray-300">
+            Discover exciting leisure activities, from nature adventures to cultural experiences.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-12 mt-12">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md activity-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Hiking & Trekking</h3>
+                <p class="mt-2 text-gray-400">Discover the awe-inspiring beauty of Almaty’s Tian Shan Mountains, where snow-capped peaks and lush valleys create a paradise for hikers and nature lovers</p>
+                <img src="https://www.journalofnomads.com/wp-content/uploads/2019/09/Trekking-to-Karakol-Valley-Kyrgyzstan.jpg" alt="Hiking in Kazakhstan" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md activity-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Skiing & Snowboarding</h3>
+                <p class="mt-2 text-gray-400">Enjoy winter sports at Shymbulak Ski Resort, a top destination in Central Asia with excellent slopes and stunning mountain views</p>
+                <img src="https://trvlland.com/wp-content/uploads/2022/09/kazakhstan_shymbulak_ski_resort-1200x900.jpg" alt="Skiing in Kazakhstan" class="rounded-lg mt-4">
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 mt-12">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md activity-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Horseback Riding</h3>
+                <p class="mt-2 text-gray-400">Immerse yourself in Kazakhstan's nomadic heritage by experiencing traditional horseback riding across the expansive steppes</p>
+                <img src="https://www.horsebreedspictures.com/wp-content/uploads/2015/11/Kazakh-Horsemen.jpg" alt="Horseback Riding" class="rounded-lg mt-4">
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md activity-box">
+                <h3 class="text-2xl font-semibold text-purple-300">Cultural Festivals</h3>
+                <p class="mt-2 text-gray-400">Celebrate Nauryz Meyrami, Kazakhstan's vibrant spring festival, with lively music, traditional dances, and festive feasts that honor renewal and community spirit</p>
+                <img src="https://www.globaltimes.cn/Portals/0/attachment/2024/2024-03-28/57061fe5-f7c5-4e0c-bac0-1cc4b4d0b7fb.jpeg" alt="Kazakhstan Festival" class="rounded-lg mt-4">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-950 text-gray-300 text-center py-6 mt-12">
+        <p>&copy; 2025 Explore Kazakhstan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
